@@ -878,4 +878,5 @@ extern "C" {
     pub fn FT_FloorFix(a: FT_Fixed) -> FT_Fixed;
     pub fn FT_Outline_Translate(outline: *const FT_Outline, xOffset: FT_Pos, yOffset: FT_Pos);
     pub fn FT_Outline_Get_CBox(outline: *const FT_Outline, acbox: *mut FT_BBox);
+    pub fn FT_Get_Advance(face: FT_Face, gindex: FT_UInt, load_flgs: FT_Int32, padvance: *mut FT_Fixed) -> FT_Error;
 }
